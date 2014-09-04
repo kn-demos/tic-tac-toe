@@ -1,0 +1,43 @@
+.board {
+    width: 300px;
+    margin: 20px auto;
+    position: relative;
+}
+
+    .board .grid__item {
+        height: 100px;
+        line-height: 80px;
+        font-size: 100px;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .board .grid__item:not(.clicked):hover {
+        background-color: lightgray;
+    }
+
+    .board .grid__item:not(.first) {
+        border-left-color: black;
+    }
+
+.board .grid__item:not(.last) {
+    border-bottom-color: black;
+}
+
+.board .game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.board .game-over p {
+    font-size: 25px;
+}
+
+
+
+/** utility **/
+.displaynone { display: none; }
